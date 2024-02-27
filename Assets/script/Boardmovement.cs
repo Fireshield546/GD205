@@ -10,12 +10,13 @@ public class Boardmovement : MonoBehaviour
     //we will use it to store our initial position
     Vector3 startPos;
 
-   
+    public AudioClip deathsound;
+    AudioSource ded;
 
     // Start is called before the first frame update
     void Start()
-    { 
-    
+    {
+        ded = GetComponent<AudioSource>();
         //use our initial transform.position for startPos
         //we do it in start since that runs before players start playing
         startPos = transform.position;
@@ -27,8 +28,9 @@ public class Boardmovement : MonoBehaviour
         //if our transform.position (the position of the transform of whatever this is attached to) ...
         //...is the same as our hazards position, then do whats in the curly brackets
         if (transform.position == hazard.position)
+            
         {
-
+            ded.PlayOneShot(deathsound, 0.5f);
             Debug.Log("HAZARD OUCH");
             //Destroy(gameObject); //demonstration of how to destroy the player piece
 
