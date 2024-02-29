@@ -55,13 +55,13 @@ public class Boardmovement : MonoBehaviour
                     transform.position = startPos;
                 }
             }
-            if (transform.position == exit.position)
-            {
-                win.PlayOneShot(escape, 0.9f);
+                if (transform.position == exit.position)
+               {
+                win.PlayOneShot(escape,0.9f);
                 Debug.Log("you made it");
 
                 transform.position = startPos;
-            }
+                }
                 {
                     //movement//
                     if (Input.GetKeyDown(KeyCode.W))
