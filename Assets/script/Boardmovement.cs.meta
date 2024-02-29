@@ -4,8 +4,9 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - hazard: {instanceID: 0}
-  - deathsound: {instanceID: 0}
+  - exit: {instanceID: 0}
+  - deathsound: {fileID: 8300000, guid: 2e2d8c4fd8def9e43998ab91228ea7ea, type: 3}
+  - escape: {fileID: 8300000, guid: 74e733ddd04b7474eac4c0e653a2fe1f, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
