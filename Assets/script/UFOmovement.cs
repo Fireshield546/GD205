@@ -20,7 +20,7 @@ public class UFOmovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //same as our previous script except using getkey since we want it to apply continuously if its being pressed down, not just for one frame
         if (Input.GetKey(KeyCode.W))
